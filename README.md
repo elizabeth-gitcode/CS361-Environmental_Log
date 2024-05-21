@@ -20,3 +20,5 @@ To receive data from the microservice, follow this template:
             json_data = json.load(file)
             file_id = os.path.basename(file_name)
             print(f"ID {file_id}:", json_data)
+
+![image](https://github.com/elizabeth-gitcode/CS361-Environmental_Log/assets/167137109/d26fe12c-eeca-48ab-a02a-7d7fb4e4ced7)
