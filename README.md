@@ -21,4 +21,6 @@ To receive data from the microservice, follow this template:
             file_id = os.path.basename(file_name)
             print(f"ID {file_id}:", json_data)
 
+Communication Contract:
+If the code isn’t working or if there are issues implementing the microservice, feel free to reach out to me on Discord. I will respond within 24 hours. Please also let me know by the end of this week (05/25).
 ![image](https://github.com/elizabeth-gitcode/CS361-Environmental_Log/assets/167137109/d26fe12c-eeca-48ab-a02a-7d7fb4e4ced7)
