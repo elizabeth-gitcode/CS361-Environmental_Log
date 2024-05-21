@@ -4,22 +4,22 @@ This microservice project creates an environmental log entry using a Flask frame
 The user must import json, requests, and os into their code for this microservice to be functional.  
 
 To request data from the microservice, follow this template:
-    data = {
+    `data = {
         "temperatureF": temperatureInF,
         "precipitation": precipitation,
     }
     data_json = json.dumps(data)
-    response = requests.post("http://127.0.0.1:5000/conditions", data_json, headers={'Content-Type': 'application/json'})
+    response = requests.post("http://127.0.0.1:5000/conditions", data_json, headers={'Content-Type': 'application/json'})`
 
 To receive data from the microservice, follow this template:
 #This reads each individual JSON environmental condition log entry from the directory database/environmental_conditions
-    files = os.listdir("database/environmental_conditions")
+    `files = os.listdir("database/environmental_conditions")
     for file_name in files:
         file_path = os.path.join("database/environmental_conditions", file_name)
         with open(file_path, "r") as file:
             json_data = json.load(file)
             file_id = os.path.basename(file_name)
-            print(f"ID {file_id}:", json_data)
+            print(f"ID {file_id}:", json_data)`
 
 Communication Contract:
 If the code isn’t working or if there are issues implementing the microservice, feel free to reach out to me on Discord. I will respond within 24 hours. Please also let me know by the end of this week (05/25).
